@@ -1,0 +1,10 @@
+{
+  "[project]/src/components/geopolitical-hotspot-map.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/geopolitical-hotspot-map.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_leaflet_dist_leaflet-src_0n13733.js",
+      "static/chunks/src_components_geopolitical-hotspot-map_tsx_03abdrw._.js",
+      "static/chunks/src_components_geopolitical-hotspot-map_tsx_11_xai7._.js"
+    ]
+  }
+}
