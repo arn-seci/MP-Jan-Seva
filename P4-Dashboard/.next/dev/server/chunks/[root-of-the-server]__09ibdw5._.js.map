@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/MP-Jan-Seva/P4-Dashboard/src/app/api/v1/grievances/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nexport async function GET() {\n  try {\n    const res = await fetch(\"http://127.0.0.1:8001/api/v1/grievances\", {\n      cache: \"no-store\",\n    });\n    if (!res.ok) throw new Error(\"Backend response not ok\");\n    const data = await res.json();\n    return NextResponse.json(data);\n  } catch (err: any) {\n    return NextResponse.json(\n      { error: err.message || \"Failed to reach backend\" },\n      { status: 502 }\n    );\n  }\n}"],"names":["GET","res","fetch","cache","ok","Error","data","json","err","error","message","status"],"mappings":";;;;AAAA;;AAEO,eAAeA;IACpB,IAAI;QACF,MAAMC,MAAM,MAAMC,MAAM,2CAA2C;YACjEC,OAAO;QACT;QACA,IAAI,CAACF,IAAIG,EAAE,EAAE,MAAM,IAAIC,MAAM;QAC7B,MAAMC,OAAO,MAAML,IAAIM,IAAI;QAC3B,OAAO,gJAAY,CAACA,IAAI,CAACD;IAC3B,EAAE,OAAOE,KAAU;QACjB,OAAO,gJAAY,CAACD,IAAI,CACtB;YAAEE,OAAOD,IAAIE,OAAO,IAAI;QAA0B,GAClD;YAAEC,QAAQ;QAAI;IAElB;AACF"}}]
+}
